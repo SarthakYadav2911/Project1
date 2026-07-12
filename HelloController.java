@@ -14,4 +14,14 @@ public class HelloController {
         return ResponseEntity.ok("Sarthak's World");
 
     }
+    @GetMapping("/todo")
+
+    public Todo getTodo() {
+        return new Todo(
+                1L,
+                "Learn Spring Boot",
+                false
+        );
+
+    }
 }
